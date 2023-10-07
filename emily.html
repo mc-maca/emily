@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>emily villarreal</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="home">  
+
+    <center>
+     
+          <!--   <img id="sun" src="file:///Users/michaelmacaulay/Documents/sun.gif">--> 
+              <div class="box"> 
+                <p id="home">  <strong>emily villarreal</strong>
+                <img id="nara" src="file:///Users/michaelmacaulay/Documents/img2.1-2.png">
+        </div>
+ 
+        <p class="stars">
+            <button id="nav" data-modal-target="#modal">about</button> &#9733;
+            <button id="nav" data-modal-target="#modal2">headshot & resume</button> &#9733;
+            <button> <a id="nav" href="https://medium.com/@emilyivillarreal" target="_blank"> writing</a></button> &#9733;
+            <button id="nav" data-modal-target="#modal4">projects</button>   <!-- &#9733;
+            <button id="nav" data-modal-target="#modal3">contact</button> --> <br>
+            <img id="ornate" src="file:///Users/michaelmacaulay/Documents/bird.gif">
+    </center>
+
+ <!--about modal--> 
+
+<div class="modal" id="modal">
+    <div class="modal-header">
+       <div class="title">about</div>
+   <!--    <button data-close-button class="close-button">&times;</button> --> 
+    </div>
+    
+    <div class="modal-body">emily villarreal is a brooklyn-based writer, intimacy coordinator, and actor who recently graduated from the nyu gallatin school of individualized studies with a concentration in the sociology of staged performance. when she's not doing stand-up or on a set, she can be found making puppets or lost in a good book. inspired by the textures and sounds of childhood, emily describes her approach to art as "discerningly light hearted' and centers her creative practice around embracing the world's softer edges. <br><br>
+      <img id="about-footer" src="file:///Users/michaelmacaulay/Documents/emily3.1.png">
+  </div>
+  </div>
+  <div id="overlay"></div>
+
+
+ <!--headshot/resume modal--> 
+  <div class="modal" id="modal2">
+    <div class="row">
+        <img id="headshot" src="file:///Users/michaelmacaulay/Documents/headshot.png"/> 
+       <img id="resume" src="file:///Users/michaelmacaulay/Documents/resume-img2.png"/>
+       </div>
+       <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:99548280-297b-388e-8459-f42308328dc2" target="_blank" id="dwnld">Download Resume 
+       </a> 
+    </div>
+  <div id="overlay"></div>
+
+     <!--projects modal--> 
+
+<div class="modal3" id="modal4">
+    <div class="modal-header">
+   <!--    <button data-close-button class="close-button">&times;</button> --> 
+    </div>
+    <p>
+    <a href="https://www.canva.com/design/DAE1V0WmC2M/6346PK9ZlVqDGxEG_M3pbA/view?utm_content=DAE1V0WmC2M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#13" target="_blank">The Rest is History | Pitch Deck</a><br><br>      
+    <a href="https://www.youtube.com/watch?v=tSL9E3ha_DU" target="_blank">ARI + DEE | Dir. Emily Villarreal</a><br><br>
+    <a href="" target="_blank">Grad School Comedy Show</a><br><br>
+    <a href="https://www.youtube.com/watch?v=iWO40KaD07k" target="_blank">The Gala | NYU Sight and Sound Final</a><br><br>
+     <u>Intimacy Coordination</u><br>
+     <ul class="list">
+      <li>WHERE WE’RE GOING (2022) Dir. by Deborah Shornack— NYU Advanced Short Film </li>
+       <li>URGENT CARE (2022) Dir. by Kaylin Mirel</li> 
+        <li>PLEASE LOVE ME (2022) Dir. by Rowan Lin— NYU Intermediate Short Film</li>
+        <li>BIRTHDAY BABY (2022) Dir. by Kelly Wang— NYU Intermediate Short Film</li>
+        <li>TO THE DOGS (2023) Writ. by Eka Savajol— NYU Advanced Short Film </li>
+        <li>STRIKE 2 1/2 (2023) Dir. by Kaylin Skye Mirel</li>
+        <li>COLOR ME GREY (2023) Dir by Rose Sutton— NYU Intermediate Short Film</li> 
+
+
+     </ul>   
+</p>
+  </div>
+  <div id="overlay"></div>
+
+
+ 
+ <!--footer box--> 
+<footer>
+<center>
+          <div class="footer-box">
+            <p id="contact">
+                <a href="mailto:vemily50@gmail.com" target="_blank">vemily50@gmail.com</a><br><br>      
+                <a href="https://instagram.com/emily.villarreal" target="_blank"><img id="insta" src="file:///Users/michaelmacaulay/Documents/insta.png"</a>
+                </a></p>
+    </div><br>
+</center>
+</footer>
+
+
+<script type="text/javascript">
+    // <![CDATA[
+    var colour="#fffefe";
+    var sparkles=120;
+    
+    /****************************
+    *  Tinkerbell Magic Sparkle *
+    * (c) 2005 mf2fm web-design *
+    *  http://www.mf2fm.com/rv  *
+    * DON'T EDIT BELOW THIS BOX *
+    ****************************/
+    var x=ox=400;
+    var y=oy=300;
+    var swide=800;
+    var shigh=600;
+    var sleft=sdown=0;
+    var tiny=new Array();
+    var star=new Array();
+    var starv=new Array();
+    var starx=new Array();
+    var stary=new Array();
+    var tinyx=new Array();
+    var tinyy=new Array();
+    var tinyv=new Array();
+    
+    window.onload=function() { if (document.getElementById) {
+      var i, rats, rlef, rdow;
+      for (var i=0; i<sparkles; i++) {
+        var rats=createDiv(3, 3);
+        rats.style.visibility="hidden";
+        document.body.appendChild(tiny[i]=rats);
+        starv[i]=0;
+        tinyv[i]=0;
+        var rats=createDiv(5, 5);
+        rats.style.backgroundColor="transparent";
+        rats.style.visibility="hidden";
+        var rlef=createDiv(1, 5);
+        var rdow=createDiv(5, 1);
+        rats.appendChild(rlef);
+        rats.appendChild(rdow);
+        rlef.style.top="2px";
+        rlef.style.left="0px";
+        rdow.style.top="0px";
+        rdow.style.left="2px";
+        document.body.appendChild(star[i]=rats);
+      }
+      set_width();
+      sparkle();
+    }}
+    
+    function sparkle() {
+      var c;
+      if (x!=ox || y!=oy) {
+        ox=x;
+        oy=y;
+        for (c=0; c<sparkles; c++) if (!starv[c]) {
+          star[c].style.left=(starx[c]=x)+"px";
+          star[c].style.top=(stary[c]=y)+"px";
+          star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+          star[c].style.visibility="visible";
+          starv[c]=50;
+          break;
+        }
+      }
+      for (c=0; c<sparkles; c++) {
+        if (starv[c]) update_star(c);
+        if (tinyv[c]) update_tiny(c);
+      }
+      setTimeout("sparkle()", 40);
+    }
+    
+    function update_star(i) {
+      if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+      if (starv[i]) {
+        stary[i]+=1+Math.random()*3;
+        if (stary[i]<shigh+sdown) {
+          star[i].style.top=stary[i]+"px";
+          starx[i]+=(i%5-2)/5;
+          star[i].style.left=starx[i]+"px";
+        }
+        else {
+          star[i].style.visibility="hidden";
+          starv[i]=0;
+          return;
+        }
+      }
+      else {
+        tinyv[i]=50;
+        tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+        tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+        tiny[i].style.width="2px";
+        tiny[i].style.height="2px";
+        star[i].style.visibility="hidden";
+        tiny[i].style.visibility="visible"
+      }
+    }
+    
+    function update_tiny(i) {
+      if (--tinyv[i]==25) {
+        tiny[i].style.width="1px";
+        tiny[i].style.height="1px";
+      }
+      if (tinyv[i]) {
+        tinyy[i]+=1+Math.random()*3;
+        if (tinyy[i]<shigh+sdown) {
+          tiny[i].style.top=tinyy[i]+"px";
+          tinyx[i]+=(i%5-2)/5;
+          tiny[i].style.left=tinyx[i]+"px";
+        }
+        else {
+          tiny[i].style.visibility="hidden";
+          tinyv[i]=0;
+          return;
+        }
+      }
+      else tiny[i].style.visibility="hidden";
+    }
+    
+    document.onmousemove=mouse;
+    function mouse(e) {
+      set_scroll();
+      y=(e)?e.pageY:event.y+sdown;
+      x=(e)?e.pageX:event.x+sleft;
+    }
+    
+    function set_scroll() {
+      if (typeof(self.pageYOffset)=="number") {
+        sdown=self.pageYOffset;
+        sleft=self.pageXOffset;
+      }
+      else if (document.body.scrollTop || document.body.scrollLeft) {
+        sdown=document.body.scrollTop;
+        sleft=document.body.scrollLeft;
+      }
+      else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+        sleft=document.documentElement.scrollLeft;
+        sdown=document.documentElement.scrollTop;
+      }
+      else {
+        sdown=0;
+        sleft=0;
+      }
+    }
+    
+    window.onresize=set_width;
+    function set_width() {
+      if (typeof(self.innerWidth)=="number") {
+        swide=self.innerWidth;
+        shigh=self.innerHeight;
+      }
+      else if (document.documentElement && document.documentElement.clientWidth) {
+        swide=document.documentElement.clientWidth;
+        shigh=document.documentElement.clientHeight;
+      }
+      else if (document.body.clientWidth) {
+        swide=document.body.clientWidth;
+        shigh=document.body.clientHeight;
+      }
+    }
+    
+    function createDiv(height, width) {
+      var div=document.createElement("div");
+      div.style.position="absolute";
+      div.style.height=height+"px";
+      div.style.width=width+"px";
+      div.style.overflow="hidden";
+      div.style.backgroundColor=colour;
+      return (div);
+    }
+    // ]]>
+    </script>
+    
+
+
+</body>
+</html>
