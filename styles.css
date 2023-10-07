@@ -1,0 +1,484 @@
+@font-face{
+  font-family: kids;
+  src: url(file:///Users/michaelmacaulay/Documents/kids.otf)
+}
+
+@font-face{
+  font-family: punt;
+  src: url(file:///Users/michaelmacaulay/Documents/punt.ttf)
+}
+
+@font-face{
+  font-family: ice;
+  src: url(file:///Users/michaelmacaulay/Documents/ice.otf)
+}
+
+@font-face{
+  font-family: goth;
+  src: url(file:///Users/michaelmacaulay/Documents/goth.otf)
+}
+
+@font-face{
+  font-family: lofi;
+  src: url(file:///Users/michaelmacaulay/Documents/lofi.otf)
+}
+
+@font-face{
+  font-family: skylens;
+  src: url(file:///Users/michaelmacaulay/Documents/skylens.otf)
+}
+
+
+
+.modal, .modal::after, .modal::before{
+    box-sizing: border-box;
+    z-index: 50;
+}
+
+.modal {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fffefe;
+  width: 490px;
+  height: 500px;
+  max-width: 80%;
+  z-index: 50;
+}
+
+#modal2 {
+ background: none;
+}
+
+.modal3{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  color: #fffefe;
+  width: 475px;
+  max-width: 80%;
+}
+
+.modal3.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top:10px;
+  margin: auto;
+  width: 50%;
+  font-family: lofi;
+  color: red;
+}
+
+/*.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}*/
+
+.modal-body {
+  padding: 5px 10px;
+  margin:10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#about-footer{
+  max-width: 10%;
+  max-height: 10%;
+  display: block;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width:100px;
+}
+
+
+
+
+
+/* this my shit below */
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+  }
+*/
+
+
+
+
+
+#dwnld{
+  font-family: lofi;
+  position: relative;
+  color: #fffefe;
+  font-size: 1.8vw;
+  margin:0 auto;    
+  display:block;
+  left: 28%;
+}
+
+#dwnld:hover{
+  transition: 0.5s;
+  opacity: 0.8;
+  color: #5170d3;
+  cursor: pointer !important;
+}
+
+
+
+                  @keyframes transitionIn {
+                  from {
+                      width: 300px;
+                      height: 300px;
+
+                  }
+                  to {
+                      width: 230px;
+                      height: 200px;
+                      padding: 50px;
+                      margin-top: 3%;
+                      margin-left: 10%;
+                      margin-right: 10%;
+                      border: 1px solid whitesmoke;
+                      color: #fffefe; 
+                      background: #8a4e9f;
+                  }
+
+                  }
+
+
+                  @keyframes fadeInAnimation {
+                  0% {
+                      opacity: 0;
+                  }
+                  100% {
+                      opacity: 1;
+                      }
+                  }
+
+#nara{
+  width: 93%;
+  background: none!important;
+  margin-top: 15px;
+  z-index: 2;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+  background: none!important;
+}
+
+a:hover{
+  transition: 0.5s;
+  opacity: 0.8;
+  cursor: pointer !important;
+}
+
+.row{
+  display: flex;
+  position: relative;
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-left:15%;
+  margin-right:10%;
+  margin-top:10px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#headshot{
+  max-width: 70%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#resume{
+  border-radius: 10px;
+  width: 72%;
+  padding: 5px;
+}
+
+/*
+#resume{
+border-radius: 10px;
+width: 72%;
+padding: 5px;
+}
+*/
+
+  .home{
+    background: url(file:///Users/michaelmacaulay/Documents/sky.jpeg)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(40, 12, 12);
+}
+
+#home{
+  color: #fffefe;
+  font-size: 2.9rem;
+  margin-top: -5%;
+  margin-bottom: 4%;
+  animation: fadeIn ease 3s;
+  font-family: lofi;
+  font-weight: 25px;
+}
+
+  p {
+    text-align:center
+   }
+
+.box{
+    position: relative;
+    width: 290px;
+    height: 280px;
+    padding: 50px;
+    margin-top: 5%;
+
+    color: #fffefe; 
+    background-image: linear-gradient(to right, red , yellow);
+  /*  animation: transitionIn 3s;  */
+}
+
+#sun{
+  position: absolute;
+  width: 1000px;
+  z-index: 5;
+  align-items: center;
+}
+
+#ornate{
+  max-width: 99px;
+  padding-right: 10px;
+}
+
+#nav{
+  margin-top: 13px;
+  color: rgb(40, 12, 12);
+  font-size: 1.5rem;
+  background: #5170d3;
+  animation: fadeIn ease 2s;
+  font-family: lofi;
+  background: none!important;
+  z-index: 9;
+}
+
+#nav:hover{
+  color:#fffefe; 
+  cursor: pointer !important;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
+  margin-top: 10px;
+  color: rgb(40, 12, 12);
+  font-size: 1.3rem;
+  animation: fadeIn ease 2s;
+}
+
+button:hover{
+  color:#fffefe; 
+  cursor: pointer !important;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.footer-box{
+  width: 100px;
+  height: 20px;
+  padding: 10px 30px 40px 30px;
+  margin-top: 15%;
+}
+
+.list{
+  font-size:.8em;
+  text-align:center;
+  align-items:center;
+  list-style-type: none;
+}
+
+#contact{
+  margin:auto;
+  align-items:center;
+  font-size: .7em;
+  color:rgb(40, 12, 12);
+  font-style:bold;
+}
+
+#insta{
+  max-width:25px;
+  width: 50%;
+  align-items:center;
+}
+
+#insta:hover{
+  transition: 0.5s;
+  opacity: 0.8;
+  cursor: pointer !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+  }
+  
+
+
+
+
+
+
+
+
+/* START: SYSTEM PREFERENCE DARK MODE (NOT BLOOD MODE) */
+
+@media (prefers-color-scheme: dark) {
+
+  .home{
+    background: url(file:///Users/michaelmacaulay/Documents/night2.jpg)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#home{
+  color: rgb(0, 250, 25);
+  font-size: 2.9rem;
+  margin-top: -5%;
+  margin-bottom: 4%;
+  animation: fadeIn ease 3s;
+  font-family: lofi;
+  font-weight: 25px;
+}
+
+  p {
+    text-align:center
+   }
+
+.box{
+  position: relative;
+  width: 290px;
+  height: 280px;
+  padding: 50px;
+  margin-top: 5%;
+    border: 1px solid rgb(0, 250, 25);
+    background: none!important;
+    color: #fffefe; 
+    color: rgb(0, 250, 25);
+  /*  animation: transitionIn 3s;  */
+}
+
+#nara{
+  width: 93%;
+  background: none!important;
+  margin-top: 15px;
+  z-index: 2;
+}
+
+#nav{
+  margin-top: 13px;
+  color: rgb(0, 250, 25);
+  font-size: 1.5rem;
+  animation: fadeIn ease 2s;
+  font-family: lofi;
+  background: none!important;
+}
+
+nav:hover{
+  color: #fffefe; 
+  transition: 0.5s;
+  cursor: pointer !important;
+}
+
+#contact{
+  margin:auto;
+  align-items:center;
+  font-size: .7em;
+  color: #fffefe;
+  font-style:bold;
+}
+
+
+.modal-header .title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top:10px;
+  margin: auto;
+  width: 50%;
+  font-family: lofi;
+color: black;
+}
+
+#dwnld:hover{
+  transition: 0.5s;
+  opacity: 0.8;
+  color:rgb(0, 250, 25);
+  cursor: pointer !important;
+}
+
+.stars{
+  color:#fffefe
+}
+
+}
+
+/* END: SYSTEM PREFERENCE DARK MODE (NOT BLOOD MODE)*/
